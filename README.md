@@ -4,11 +4,11 @@
 
 I just add some modification + Use a separated host for KERBEROS.
 
-⋅⋅* Before you run the playbook make sure you set the **CLOUD_TO_USE** environment variable to **static**.
+Before you run the playbook make sure you set the **CLOUD_TO_USE** environment variable to **static**.
 
-⋅⋅* Full installation : `install_cluster.sh`
+- Full installation : `install_cluster.sh`
 
-⋅⋅* Step by Step Installation :
+- Step by Step Installation :
 
   1.**Prepare the nodes**: `prepare_nodes.sh`
   
