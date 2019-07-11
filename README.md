@@ -4,12 +4,21 @@
 
 I just add some modification + Use a separated host for KERBEROS.
 
-⋅⋅*Before you run the playbook make sure you set the **CLOUD_TO_USE** environment variable to **static**.
-..*Full installation : `install_cluster.sh`
-..*Step by Step Installation :
+⋅⋅* Before you run the playbook make sure you set the **CLOUD_TO_USE** environment variable to **static**.
+
+⋅⋅* Full installation : `install_cluster.sh`
+
+⋅⋅* Step by Step Installation :
+
   1.**Prepare the nodes**: `prepare_nodes.sh`
+  
   2.**Install Ambari**: `install_ambari.sh`
+  
   3.**Configure Ambari**: `configure_ambari.sh`
+  
   4.**Install KDC**: `install_kdc.sh`
+  
   4.**Apply Blueprint**: `apply_blueprint.sh`
+  
   5.**Post Install**: `post_install.sh`
+  
