@@ -18,7 +18,7 @@ Before you run the playbook make sure you set the **CLOUD_TO_USE** environment v
   
   4.**Install KDC**: `install_kdc.sh`
   
-  4.**Apply Blueprint**: `apply_blueprint.sh`
+  5.**Apply Blueprint**: `apply_blueprint.sh`
   
-  5.**Post Install**: `post_install.sh`
+  6.**Post Install**: `post_install.sh`
   
