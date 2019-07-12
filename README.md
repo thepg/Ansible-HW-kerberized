@@ -23,5 +23,5 @@ Before you run the playbook make sure you set the **CLOUD_TO_USE** environment v
 	
   - If you want to delete your HORTONWORKS cluster files with :
   
-	** Delete HW Cluster** : `delete_cluster.sh`
+	**Delete HW Cluster** : `delete_cluster.sh`
 	
