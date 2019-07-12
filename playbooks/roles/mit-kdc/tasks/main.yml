@@ -80,6 +80,3 @@
     name: "{{ kadmin_service_name }}"
     enabled: yes
   ignore_errors: false
-
-- name: Start kinit
-  shell: "{{ kinit_command }}"

@@ -23,6 +23,11 @@
   include_tasks: java.yml
   when: java != "embedded"
 
+- name: Install Extjs for Oozie UI
+  yum:
+    name: "{{ extjs_package_rpm }}"
+    state: present
+
 - name: Make sure the NTP service is started
   service:
     name: "{{ ntp_service_name }}"
@@ -44,6 +49,18 @@
   with_items:
     - "{{ groups['hadoop-cluster']|sort(reverse=True) }}"
   when: not external_dns
+
+- name: clear default hosts in /etc/hosts [1]
+  lineinfile:
+    dest: /etc/hosts
+    regexp: "^127.0.0.1 (?!localhost)"
+    state: absent
+
+- name: clear default hosts in /etc/hosts [2]
+  lineinfile:
+    dest: /etc/hosts
+    regexp: "^::1 (?!localhost)"
+    state: absent
 
 - name : Modifie the sshd_config Add PasswordAuthentication
   lineinfile:

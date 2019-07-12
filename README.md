@@ -20,3 +20,8 @@ Before you run the playbook make sure you set the **CLOUD_TO_USE** environment v
     5.**Apply Blueprint**: `apply_blueprint.sh`
 
     6.**Post Install**: `post_install.sh`
+	
+  - If you want to delete your HORTONWORKS cluster files with :
+  
+	** Delete HW Cluster** : `delete_cluster.sh`
+	

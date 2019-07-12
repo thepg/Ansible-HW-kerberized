@@ -63,18 +63,23 @@ database_options:
   superset_db_name: 'superset'
   superset_db_username: 'superset'
   superset_db_password: 'superset'
-  rangeradmin_db_name: 'ranger'
-  rangeradmin_db_username: 'ranger'
-  rangeradmin_db_password: 'ranger'
-  rangerkms_db_name: 'rangerkms'
-  rangerkms_db_username: 'rangerkms'
-  rangerkms_db_password: 'rangerkms'
   registry_db_name: 'registry'
   registry_db_username: 'registry'
   registry_db_password: 'registry'
   streamline_db_name: 'streamline'
   streamline_db_username: 'streamline'
   streamline_db_password: 'streamline'
+
+database: 'mysql'                                         # can be set to 'embedded', 'postgres', 'mysql' or 'mariadb'
+database_options:
+  add_repo: yes                                           # if set to 'no', Ansible will not add a repo file (containing the public URL)
+  external_hostname: ''
+  rangeradmin_db_name: 'ranger'
+  rangeradmin_db_username: 'ranger'
+  rangeradmin_db_password: 'ranger'
+  rangerkms_db_name: 'rangerkms'
+  rangerkms_db_username: 'rangerkms'
+  rangerkms_db_password: 'rangerkms'
 
 
 #####################################
@@ -200,6 +205,9 @@ blueprint_dynamic:                                        # properties for the d
       - HST_SERVER
       - ACTIVITY_ANALYZER
       - ACTIVITY_EXPLORER
+      - RANGER_ADMIN
+      - RANGER_USERSYNC
+      - RANGER_KMS_SERVER
       - HST_AGENT
       - AMBARI_SERVER
       - INFRA_SOLR
