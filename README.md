@@ -1,7 +1,7 @@
-## HW ANSIBLE PLAYBOOK KERBERIZED
+## HORTONWORKS ANSIBLE PLAYBOOK KERBERIZED
 #### This repo is based on the non-official [Ansible Playbook by HORTONWORKS](https://github.com/hortonworks/ansible-hortonworks).
 
-I just add some modification + Use a separated host for KERBEROS.
+I just add some modification + Use a separated host for KERBEROS..
 
 Before you run the playbook make sure you set the **CLOUD_TO_USE** environment variable to **static**.
 
